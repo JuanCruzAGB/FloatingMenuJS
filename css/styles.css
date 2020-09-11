@@ -1,0 +1,72 @@
+.floating-menu{
+    --color-one: #222;
+    --color-two: #ddd;
+    position: fixed;
+    z-index: 10;
+    padding: .3rem;
+}
+
+.floating-menu.top{
+    top: 0;
+}
+
+.floating-menu.left{
+    left: 0;
+}
+
+.floating-menu.right{
+    right: 0;
+}
+
+.floating-menu.bottom{
+    bottom: 0;
+}
+
+.floating-menu .floating-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 2rem;
+    width: fit-content;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: .25rem;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    transition: 500ms;
+    padding: .5rem;
+}
+
+.floating-menu .floating-button .link-text{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    transition: 500ms;
+    color: var(--color-two);
+}
+
+.floating-menu .floating-button:hover .link-text{
+    color: var(--color-one);
+}
+
+.floating-menu.left .floating-button .link-text{
+    margin-right: .5rem;
+}
+
+.floating-menu.right .floating-button .link-text{
+    margin-left: .5rem;
+}
+
+/* MD */
+@media(min-width: 768px){
+    /**/
+}
+
+/* LG */
+@media(min-width: 1024px){
+}
+
+/* XL */
+@media(min-width: 1200px){
+    /**/
+}
