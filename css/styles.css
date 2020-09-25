@@ -1,6 +1,6 @@
 .floating-menu{
-    --color-one: #222;
-    --color-two: #ddd;
+    --floatingmenu-color-one: #222;
+    --floatingmenu-color-two: #ddd;
     position: fixed;
     z-index: 10;
     padding: .3rem;
@@ -31,8 +31,8 @@
     height: 2rem;
     line-height: 2rem;
     border-radius: .25rem;
-    background-color: var(--color-one);
-    color: var(--color-two);
+    background-color: var(--floatingmenu-color-one);
+    color: var(--floatingmenu-color-two);
     transition: 500ms;
     padding: .5rem;
 }
@@ -42,11 +42,11 @@
     width: 100%;
     overflow: hidden;
     transition: 500ms;
-    color: var(--color-two);
+    color: var(--floatingmenu-color-two);
 }
 
 .floating-menu .floating-button:hover .link-text{
-    color: var(--color-one);
+    color: var(--floatingmenu-color-one);
 }
 
 .floating-menu.left .floating-button .link-text{
