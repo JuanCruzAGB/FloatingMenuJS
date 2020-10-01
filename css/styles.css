@@ -1,25 +1,27 @@
 .floating-menu{
-    --floatingmenu-color-one: #222;
-    --floatingmenu-color-two: #ddd;
+    --floatingmenu-background-color: #222;
+    --floatingmenu-background-color-alternative: #222;
+    --floatingmenu-icon-color: #ddd;
+    --floatingmenu-icon-color-alternative: #ddd;
     position: fixed;
     z-index: 10;
     padding: .3rem;
 }
 
 .floating-menu.top{
-    top: 0;
+    top: 1rem;
 }
 
 .floating-menu.left{
-    left: 0;
+    left: 1rem;
 }
 
 .floating-menu.right{
-    right: 0;
+    right: 1rem;
 }
 
 .floating-menu.bottom{
-    bottom: 0;
+    bottom: 1rem;
 }
 
 .floating-menu .floating-button{
@@ -31,10 +33,19 @@
     height: 2rem;
     line-height: 2rem;
     border-radius: .25rem;
-    background-color: var(--floatingmenu-color-one);
-    color: var(--floatingmenu-color-two);
+    background-color: var(--floatingmenu-background-color);
+    color: var(--floatingmenu-icon-color);
     transition: 500ms;
     padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.floating-menu .floating-button.active,
+.floating-menu .floating-button:focus,
+.floating-menu .floating-button:hover{
+    background-color: var(--floatingmenu-background-color-alternative);
+    color: var(--floatingmenu-icon-color-alternative);
 }
 
 .floating-menu .floating-button .link-text{
@@ -42,11 +53,11 @@
     width: 100%;
     overflow: hidden;
     transition: 500ms;
-    color: var(--floatingmenu-color-two);
+    color: var(--floatingmenu-icon-color);
 }
 
 .floating-menu .floating-button:hover .link-text{
-    color: var(--floatingmenu-color-one);
+    color: var(--floatingmenu-background-color);
 }
 
 .floating-menu.left .floating-button .link-text{
