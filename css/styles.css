@@ -24,6 +24,13 @@
     bottom: 1rem;
 }
 
+.floating-menu .floating-button.whatsapp{
+    --floatingmenu-background-color: #25D366;
+    --floatingmenu-background-color-alternative: #075E54;
+    --floatingmenu-icon-color: #fff;
+    --floatingmenu-icon-color-alternative: #fff;
+}
+
 .floating-menu .floating-button{
     display: flex;
     justify-content: center;
