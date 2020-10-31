@@ -24,14 +24,7 @@
     bottom: 1rem;
 }
 
-.floating-menu .floating-button.whatsapp {
-    --floatingmenu-background-color: #25D366;
-    --floatingmenu-background-color-alternative: #075E54;
-    --floatingmenu-icon-color: #fff;
-    --floatingmenu-icon-color-alternative: #fff;
-}
-
-.floating-menu .floating-button {
+.floating-menu .floating-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +52,22 @@
     color: var(--floatingmenu-icon-color-alternative);
 }
 
-.floating-menu .floating-button .link-text {
+.floating-menu .floating-button.whatsapp{
+    --floatingmenu-background-color: #25D366;
+    --floatingmenu-background-color-alternative: #075E54;
+    --floatingmenu-icon-color: #fff;
+    --floatingmenu-icon-color-alternative: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    min-width: 3rem;
+    height: 3rem;
+}
+
+.floating-menu .floating-button.whatsapp .fa-whatsapp{
+    animation: maximize 4s infinite;
+}
+
+.floating-menu .floating-button .link-text{
     display: block;
     width: 100%;
     overflow: hidden;
@@ -77,6 +85,18 @@
 
 .floating-menu.right .floating-button .link-text {
     margin-left: .5rem;
+}
+
+@keyframes maximize{
+    0%{
+        transform: scale(1);
+    } 20%{
+        transform: scale(1.5);
+    } 80%{
+        transform: scale(1.5);
+    } 100%{
+        transform: scale(1);
+    }
 }
 
 /* * MD */
