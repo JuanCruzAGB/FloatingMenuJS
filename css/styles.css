@@ -1,4 +1,4 @@
-.floating-menu{
+.floating-menu {
     --floatingmenu-background-color: #222;
     --floatingmenu-background-color-alternative: #222;
     --floatingmenu-icon-color: #ddd;
@@ -8,30 +8,30 @@
     padding: .3rem;
 }
 
-.floating-menu.top{
+.floating-menu.top {
     top: 1rem;
 }
 
-.floating-menu.left{
+.floating-menu.left {
     left: 1rem;
 }
 
-.floating-menu.right{
+.floating-menu.right {
     right: 1rem;
 }
 
-.floating-menu.bottom{
+.floating-menu.bottom {
     bottom: 1rem;
 }
 
-.floating-menu .floating-button.whatsapp{
+.floating-menu .floating-button.whatsapp {
     --floatingmenu-background-color: #25D366;
     --floatingmenu-background-color-alternative: #075E54;
     --floatingmenu-icon-color: #fff;
     --floatingmenu-icon-color-alternative: #fff;
 }
 
-.floating-menu .floating-button{
+.floating-menu .floating-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,14 +48,18 @@
     outline: none;
 }
 
+.floating-menu .floating-button.round {
+    border-radius: 50%;
+}
+
 .floating-menu .floating-button.active,
 .floating-menu .floating-button:focus,
-.floating-menu .floating-button:hover{
+.floating-menu .floating-button:hover {
     background-color: var(--floatingmenu-background-color-alternative);
     color: var(--floatingmenu-icon-color-alternative);
 }
 
-.floating-menu .floating-button .link-text{
+.floating-menu .floating-button .link-text {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -63,15 +67,15 @@
     color: var(--floatingmenu-icon-color);
 }
 
-.floating-menu .floating-button:hover .link-text{
+.floating-menu .floating-button:hover .link-text {
     color: var(--floatingmenu-background-color);
 }
 
-.floating-menu.left .floating-button .link-text{
+.floating-menu.left .floating-button .link-text {
     margin-right: .5rem;
 }
 
-.floating-menu.right .floating-button .link-text{
+.floating-menu.right .floating-button .link-text {
     margin-left: .5rem;
 }
 
