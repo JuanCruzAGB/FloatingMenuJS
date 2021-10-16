@@ -1,8 +1,8 @@
 .floating-menu {
     --floatingmenu-background-color: #222;
-    --floatingmenu-background-color-alternative: #222;
+    --floatingmenu-background-color-alt: #222;
     --floatingmenu-icon-color: #ddd;
-    --floatingmenu-icon-color-alternative: #ddd;
+    --floatingmenu-icon-color-alt: #ddd;
     position: fixed;
     z-index: 10;
     padding: .3rem;
@@ -24,7 +24,7 @@
     bottom: 1rem;
 }
 
-.floating-menu .floating-button{
+.floating-menu .floating-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +41,10 @@
     outline: none;
 }
 
+.floating-menu .floating-button.hidden {
+    display: none;
+}
+
 .floating-menu .floating-button.round {
     border-radius: 50%;
 }
@@ -48,15 +52,15 @@
 .floating-menu .floating-button.active,
 .floating-menu .floating-button:focus,
 .floating-menu .floating-button:hover {
-    background-color: var(--floatingmenu-background-color-alternative);
-    color: var(--floatingmenu-icon-color-alternative);
+    background-color: var(--floatingmenu-background-color-alt);
+    color: var(--floatingmenu-icon-color-alt);
 }
 
 .floating-menu .floating-button.whatsapp{
     --floatingmenu-background-color: #25D366;
-    --floatingmenu-background-color-alternative: #075E54;
+    --floatingmenu-background-color-alt: #075E54;
     --floatingmenu-icon-color: #fff;
-    --floatingmenu-icon-color-alternative: #fff;
+    --floatingmenu-icon-color-alt: #fff;
     border-radius: 50%;
     font-size: 1.5rem;
     min-width: 3rem;
@@ -99,16 +103,16 @@
     }
 }
 
-/* * MD */
+/* ? MD */
 @media(min-width: 768px){
     /**/
 }
 
-/* * LG */
+/* ? LG */
 @media(min-width: 1024px){
 }
 
-/* * XL */
+/* ? XL */
 @media(min-width: 1200px){
     /**/
 }
